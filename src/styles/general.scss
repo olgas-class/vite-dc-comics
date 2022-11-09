@@ -1,0 +1,38 @@
+@use "./partials/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $text_font_size;
+  font-family: $text_font_family;
+  color: $text_color;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.small-container {
+  width: 70%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+
+  &.justify-between {
+    justify-content: space-between;
+  }
+}
